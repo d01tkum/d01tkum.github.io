@@ -50,11 +50,13 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <li class="nav-item dropdown show">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hobbies</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#">Web</a>
+                            <a class="dropdown-item" href="./hobbies/social.html">Social</a>
+                            <a class="dropdown-item" href="#">Sports</a>
+                        </div>
                     </li>
                 </ul>
                 <form class="form-inline mt-2 mt-md-0">
@@ -66,71 +68,138 @@
 
     <main role="main" class="container">
         <div class="jumbotron">
-            <h1>ABOUT ME</h1>
-            <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
+            <h1 class="display-4">ABOUT ME</h1>
+            <p class="lead">This page is an abstract about me. </p>
             <!--<a class="btn btn-lg btn-primary" href="/docs/4.3/components/navbar/" role="button">View navbar docs &raquo;</a>-->
         </div>
 
         <div class="container">
-            <h2>Profile</h2>
-             <p>大阪大学 情報科学研究科 コンピュータサイエンス専攻<br>
-            大阪大学 産業科学研究所 複合知能メディア分野 八木研究室 修士１年</p>
-            <p> A 1st year master student in Graduate School of Information Science, Osaka University and<br>
-             in yagi laboratory<br>
-             Department of Intelligent Media of the Institue of Scientific and Industrial Research(ISIR)<br>
-             Osaka University</p>
-        </div>
-
-        <div class="container">
-            <h2>Research</h2>
-            <p>近年、農業就業者の減少・高齢化が深刻な社会問題となっており、ノウハウをデータ化する新しいビジネスモデルや、センシング技術・データ分析による精密農業など、農業の ICT化に注目が集まっている。農業の ICT 化のためには湿温度、土壌の水分・栄養分などを計測し、植物の形状や構造を観測する高度なセンシング技術が不可欠である。従来の植物復元手法は、遮蔽により観測することができない枝構造を断定的に生成する。 また農業への応用を想定していないため個別の葉の情報を復元しないものが多い。本研究では、植物の成長予測などの植物の構造モデルを利用した農業・林業分野のアプリケーションを想定し、葉による遮蔽が大きい植物を対象として、多視点画像から遮蔽された枝の構造および、葉の位置・姿勢を復元することを目指している。</p>
-        </div>
-
-        <div class="container">
-            <h2>略歴</h2>
-            <div class="container">
-                <div class="table-responsive">
-                    <table class="table table-borderless">
-                        <thead>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">1994.10.07:</th>
-                            <td>大阪生まれ</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1995 - 2004:</th>
-                            <td>転勤族</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2014.04 - 2018.03:</th>
-                            <td>大阪府立大学</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2018.4 - 2020.03</th>
-                            <td>大阪大学 大学院</td>    
-                        </tbody>
-                    </table>    
+            <h3 class="display-5">Please follow me</h3>
+                <div class="row">
+                    <div class="col-md-2">
+                        <a href="https://twitter.com/d01tkum"><img src="https://img.shields.io/twitter/follow/d01tkum.svg?style=social" alt="Twitter"></a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://github.com/d01tkum"><img src="https://img.shields.io/github/followers/d01tkum.svg?label=Follow%20%40d01tkum&style=social" alt="Git-Hub"></a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://github.com/d01tkum"><img src="https://img.shields.io/docker/stars/d01tkum/first_commit.svg?style=plastic" alt="Docker-Hub"></a>
+                    </div>
                 </div>
             </div>
 
+        <br><br>
         <div class="container">
-            <h2>SNS</h2>
-            <ul>
-                <li>
-                    <a href="https://twitter.com/d01tkum">Twitter</a>
-                </li>
-                <li>
-                    <a href="https://github.com/d01tkum">Git-Hub</a>
-                </li>
-                <li>
-                    <a href="https://hub.docker.com/u/d01tkum">Docker-Hub</a>
-                </li>
-            </ul>
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="border-bottom">プロフィール《 PROFILE 》</h2>
+                    <p>大阪大学 情報科学研究科 コンピュータサイエンス専攻<br>
+                    大阪大学 産業科学研究所 複合知能メディア分野 八木研究室 修士１年</p>
+                    <p> A 1st year master student in Graduate School of Information Science, Osaka University and<br>
+                    in yagi laboratory<br>
+                    Department of Intelligent Media of the Institue of Scientific and Industrial Research(ISIR)<br>
+                    Osaka University</p>
+                    <a href="http://www.am.sanken.osaka-u.ac.jp/index-jp.html"><img src="https://img.shields.io/badge/My-labo-blue.svg"></a>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/Thumbnail.jpg" class="rounded mx-auto d-block"   width="70%" alt="Thumnail.jpg">
+                </div>
+            </div>
+        </div>  
+
+        <br><br>
+        <div class="container">
+            <h2 class="border-bottom">分野・技術 《 FIELD・TECH 》</h2>
+            <h3 class="display-5">分野:</h3>
+            <p>Computer Science, Computer Vision, 3D Reconstruction</p>
+            <h3 class="display-5">技術:</h3>
+            <div class="row">
+                <div class="col-md-2"><strong>High skill:</strong></div>
+                <div class="col-md-10">Python3, OpenCV</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><strong>Middle skill:</strong></div>
+                <div class="col-md-10">Docker, Flask</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><strong>Low skill:</strong></div>
+                <div class="col-md-10">Keras(Tensorflow), Django, Scala</div>
+            </div>
         </div>
+
+        <br><br>
+        <div class="container">
+            <h2 class="border-bottom">研究内容 《 RESEARCH 》</h2>
+            <p>　近年、農業就業者の減少・高齢化が深刻な社会問題となっており、ノウハウをデータ化する新しいビジネスモデルや、センシング技術・データ分析による精密農業など、農業の ICT化に注目が集まっている。農業の ICT 化のためには湿温度、土壌の水分・栄養分などを計測し、植物の形状や構造を観測する高度なセンシング技術が不可欠である。従来の植物復元手法は、遮蔽により観測することができない枝構造を断定的に生成する。 また農業への応用を想定していないため個別の葉の情報を復元しないものが多い。</p>
+            <p>　本研究では、植物の成長予測などの植物の構造モデルを利用した農業・林業分野のアプリケーションを想定し、葉による遮蔽が大きい植物を対象として、多視点画像から遮蔽された枝の構造および、葉の位置・姿勢を復元することを目指している。</p>
+            <img src="./assets/cg_pant.gif" class="rounded mx-auto d-block" width="20%" alt="CG-Plant.gif"> 
+        </div>
+        
+        <br><br>    
+        <div class="container">
+            <h2 class="border-bottom">略歴 《BIOGRAPHY》</h2>
+            <div class="row">
+                <div class="col-md-2"><strong>1994.10.07:</strong></div>
+                <div class="col-md-10">大阪生まれ</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><strong>1995 - 2004:</strong></div>
+                <div class="col-md-10">転勤族</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><strong>2004.04 - 2006.03:</strong></div>
+                <div class="col-md-10">大阪の公立小学校</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><strong>2006.04 - 2009.03:</strong></div>
+                <div class="col-md-10">大阪の私立中学校</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><strong>2009.04 - 2012.03:</strong></div>
+                <div class="col-md-10">大阪の私立高校</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><strong>2012.04 - 2013.03:</strong></div>
+                <div class="col-md-10">浪人</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><strong>2014.04 - 2018.03:</strong></div>
+                <div class="col-md-10">大阪府立大学</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><strong>2018.4 - :</strong></div>
+                <div class="col-md-10">大阪大学 大学院</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><strong>2018.7 - 2019.03:</strong></div>
+                <div class="col-md-10">大阪大学 先導的学祭研究機構 特別研究員S</div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-11">
+                    <h5 class="border-bottom">特筆点</h3>
+                    <div class="row">
+                        <div class="col-md-2"><strong>2018.08:</strong></div>
+                        <div class="col-md-10">AWS Summer Internship参加</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"><strong>2018.11:</strong></div>
+                        <div class="col-md-10">富士フィルム Ideathon 団体:優勝 個人: MVP</div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+       <br><br>
     </main>
 
-
+    <hr>
+    <footer class="container">
+        <p>© d01tkum. All rights reserved</p>
+    </footer>
 
 
 <!--
