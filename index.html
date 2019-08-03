@@ -28,9 +28,28 @@
             -ms-user-select: none;
             user-select: none;
         }
-    
         body {
             font-family: 'Noto Sans JP', 'sans-serif', 'MS Pゴシック';
+        }
+        @keyframes b{0%{left:-10%}to{left:110%}}
+        boat {
+            width: 150px;
+            position: absolute;
+            z-index: 1200;
+            bottom: -30px;
+            -webkit-animation-delay: 0;
+            -webkit-animation-duration: 30s;
+            -webkit-animation-name: b;
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation-delay: 0;
+            -moz-animation-duration: 30s;
+            -moz-animation-name: b;
+            -moz-animation-fill-mode: forwards;
+            animation-delay: 0;
+            animation-duration: 50s;
+            animation-name: b;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
         }
     </style>
   </head>
@@ -73,6 +92,10 @@
             <h1 class="display-4">ABOUT ME</h1>
             <p class="lead">This page is an abstract about me. </p>
             <!--<a class="btn btn-lg btn-primary" href="/docs/4.3/components/navbar/" role="button">View navbar docs &raquo;</a>-->
+        
+            <div id="boat">
+                <img src="./assets/boat.gif" width="10%" alt="Helmy">
+            </div>
         </div>
 
         <div class="container">
@@ -141,7 +164,7 @@
                     <img src="./assets/arrow.png" width="40%" alt="arrow.png">
                 </div>
                 <div class="col-md-4 text-center">
-                    <img src="./assets/cg_pant.gif" width="80%" alt="CG-Plant.gif"> 
+                    <img src="./assets/plant.gif" width="80%" alt="plant.gif"> 
                 </div>
             </div>
         </div>
@@ -209,7 +232,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-2"><strong>2019.04:</strong></div>
-                        <div class="col-md-10"><strong>CVPR2019 Workshop</strong> Accepted</div>
+                        <div class="col-md-10"><a href="https://www.plant-phenotyping.org/lw_resource/datapool/systemfiles/elements/files/7d6f40d7-709c-11e9-b1c5-dead53a91d31/current/document/DoiCVPPP2019.pdf"><strong>CVPR2019 Workshop</strong> Accepted</a></div>
                     </div>
                     
                 </div>
